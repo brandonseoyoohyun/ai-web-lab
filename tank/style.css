@@ -1,0 +1,15 @@
+:root { --bg:#0b1020; --fg:#eaf2ff; --accent:#6ee7ff; --panel:#141a33; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, sans-serif; background: var(--bg); color: var(--fg); }
+header, footer { text-align:center; padding:12px 16px; }
+h1 { margin: 0 0 6px 0; font-size: 20px; }
+.hint { opacity:.8; font-size: 14px; }
+main { max-width: 900px; margin: 0 auto; padding: 8px 16px 24px; }
+canvas { display:block; width:100%; max-width: 900px; background:#0e1530; border:2px solid #223; border-radius:12px; }
+.hud { display:flex; gap:12px; align-items:center; justify-content: center; margin:10px auto; padding:8px 12px; background:var(--panel); border-radius:12px; }
+.hud strong { color: var(--accent); }
+.touch { display:grid; grid-template-columns: repeat(4,1fr); gap:8px; max-width: 480px; margin: 12px auto 0; }
+.touch button, #pauseBtn { padding:10px 14px; font-size:16px; background:#1d264d; color:var(--fg); border:1px solid #2a3566; border-radius:12px; }
+.touch button:active, #pauseBtn:active { transform: translateY(1px); }
+@media (min-width: 720px) { .touch { display:none; } }
+a { color: var(--accent); }

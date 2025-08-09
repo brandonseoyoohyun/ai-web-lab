@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daily Philosopher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header><h1>Daily Philosopher</h1><p class="hint">하루 1문장 생각하기. 내 답은 브라우저에 저장됩니다.</p></header>
+  <main>
+    <section class="card">
+      <div id="date"></div>
+      <div id="question" class="question">로딩 중...</div>
+      <textarea id="answer" rows="6" placeholder="오늘의 생각을 적어 보세요."></textarea>
+      <div class="controls">
+        <button id="save">저장</button>
+        <button id="seeHistory">최근 답변 보기</button>
+      </div>
+      <div id="status" class="result" aria-live="polite"></div>
+    </section>
+    <section class="card">
+      <h2>최근 답변</h2>
+      <ul id="history" class="list"></ul>
+    </section>
+  </main>
+  <footer><p><a href="../">목록</a></p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
